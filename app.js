@@ -53,7 +53,7 @@
       }).join('')}</div><div class="bottom-note">05 RECORDS <span>·</span> SOURCE / PERSONAL ARCHIVE</div>`;
       document.querySelectorAll('[data-wallet]').forEach(button=>button.onclick=()=>{if(Quest.openWallet(state,button.dataset.wallet)){save();renderModal();}});
     }else if(state.stage===4){
-      $('main').innerHTML=shellHeading(4,'Общее прошлое.')+`<div class="location-object" aria-hidden="true"><div class="coordinate-grid"><span class="map-point"></span></div><span class="small-label">LOCATION / UNIDENTIFIED</span></div><p class="puzzle-text">Было место, где два человека какое-то время жили вместе.</p><p class="intro">Система просит только номер.</p>`+form('location','ENTER NUMBER','___','',true);
+      $('main').innerHTML=shellHeading(4,'Общее прошлое.')+`<div class="location-object" aria-hidden="true"><div class="coordinate-grid"><span class="map-point"></span></div><span class="small-label">LOCATION / UNIDENTIFIED</span></div><p class="puzzle-text">Было место, где два человека какое-то время жили вместе.</p><p class="intro">Введи номер квартиры, в которой мы жили вместе.</p>`+form('location','ENTER NUMBER','___','',true);
       bindAnswer('location');
     }else if(state.stage===5){
       $('main').innerHTML=`<div class="section-meta"><span>FINAL ASSEMBLY</span><span class="tag">ALL FRAGMENTS RECOVERED</span></div><h1>Собери всё<br>воедино.</h1><p class="intro">Собери фрагменты в порядке расследования.</p><div class="fragments">${state.fragments.map((f,i)=>`<div><span class="small-label">FRAGMENT / 0${i+1}</span><b>${escape(f)}</b></div>`).join('')}</div>`+form('final','ENTER FINAL ACCESS CODE','','DIGITS ONLY · NO SPACES',true);
