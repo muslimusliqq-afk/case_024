@@ -4,10 +4,10 @@
 })(typeof globalThis !== 'undefined' ? globalThis : this, function (crypto) {
   'use strict';
   const HASHES = {
-    timestamp: 'd83a6c4abfbacee3e041c7173fc4fc113e2e599776add57c8fd9dddc31275afd',
+    timestamp: '5151ef6dd54e6695a485a12fafb5d367801d0eff83d1c57fd6df1524d4ee7821',
     wallet: '737c978e96f4867e8af73f32177fa598abc1aa46b3db0afdb2ce230de2acd3fd',
     location: '7104741a92e73eb6c5d69cd04cf0afbe50a8796a010d8fa25daaf79e5e173bf3',
-    final: 'bb11173ba970d8f86becce96672b5fb6a76af3a7a601c34920ea731f55d76f90'
+    final: '58f88830b9f0fc9ae68b9fc5321c4a71f6824b90e09b74c400e4c0f203362e8f'
   };
   const WALLETS = Object.freeze([
     {id:'w0', address:'0x7b51e9…e42a', kind:'math', question:'8 × 8 = ?', answer:'64'},
